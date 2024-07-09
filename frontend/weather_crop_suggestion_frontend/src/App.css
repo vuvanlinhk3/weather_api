@@ -1,0 +1,133 @@
+/* Định dạng tổng quan */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Định dạng tiêu đề */
+h2 {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Định dạng phần nhập liệu và hiển thị dữ liệu */
+.input-data-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+strong{
+  font-size: 21px;
+}
+/* Định dạng box chứa phần nhập và hiển thị dữ liệu */
+.input-section, .data-section {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #333;
+}
+
+/* Định dạng các ô nhập liệu */
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 90%;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Định dạng phần hiển thị thông tin thời tiết và gợi ý cây trồng */
+.weather-data, .crop-suggestions {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.weather-data p, .crop-suggestions p {
+  margin: 5px 0;
+}
+
+.crop-suggestions h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  color: rgb(211, 166, 108);
+}
+
+/* Định dạng layout tổng quan */
+.input-data-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Các kiểu mặc định của ứng dụng React */
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #d4d7dd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(82, 126, 146);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
